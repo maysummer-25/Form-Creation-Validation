@@ -95,11 +95,11 @@ Fetches a list of users from a public API and dynamically displays their names i
 ### JavaScript Logic Summary
 
 ```js
-const fetchUserData = async () => {
+async function fetchUserData () {
   const apiUrl = "https://jsonplaceholder.typicode.com/users";
   const dataContainer = document.getElementById("api-data");
 
-  ...(continue from fetch.html)
+}  ...(continue from fetch.html)
 ```
 
 ---
