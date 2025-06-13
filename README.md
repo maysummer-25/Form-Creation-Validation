@@ -1,17 +1,25 @@
-# 🚀 Form-Creation-Validation
+# 🚀 Form Creation, Validation, and API Data Fetching
 
-This project is a user registration form that implements **client-side validation** using HTML, CSS, and JavaScript. Users must enter a valid username, email, and password to register successfully. Feedback is shown dynamically based on the validity of the inputs.
+This project includes a set of beginner-friendly web development tasks that demonstrate form creation, client-side validation, and fetching data from an external API using JavaScript.
 
 ---
 
 ## 📁 Project Structure
 
 Form-Creation-Validation/
-│
-├── index.html # HTML structure for the form
-├── style.css # CSS styling for the layout
-├── script.js # JavaScript logic for validation
-└── README.md # Project documentation (this file)
+├── index.html # Simple Quiz Form
+├── styles.css # Styles for the Quiz Form
+├── script.js # Form validation and scoring logic
+├── fetch-data.html # HTML structure for API fetching
+├── fetch-data.css # Styling for user list display
+├── fetch-data.js # JS logic to fetch and display user data
+└── README.md # Project documentation
+
+---
+
+## 1. Form Creation and Validation
+
+This project is a user registration form that implements **client-side validation** using HTML, CSS, and JavaScript. Users must enter a valid username, email, and password to register successfully. Feedback is shown dynamically based on the validity of the inputs.
 
 ---
 
@@ -48,12 +56,6 @@ Form-Creation-Validation/
 
 ---
 
-## 🖥️ Demo Screenshot
-
-![Form Preview](https://via.placeholder.com/600x300?text=Form+Validation+Preview)
-
----
-
 ## 📦 Setup Instructions
 
 To run this project on your local machine:
@@ -76,7 +78,48 @@ Displaying dynamic feedback using JavaScript and CSS
 
 ---
 
+## 2️⃣ Fetch User Data from API
+
+### Description
+Fetches a list of users from a public API and dynamically displays their names in a styled list on the webpage.
+
+### API Used
+- Endpoint: `https://jsonplaceholder.typicode.com/users`
+
+### Features
+- Fetch data asynchronously using `fetch` and `async/await`
+- Display user names in a formatted `<ul>`
+- Error handling for failed requests
+- Initial loading indicator
+
+### JavaScript Logic Summary
+
+```js
+const fetchUserData = async () => {
+  const apiUrl = "https://jsonplaceholder.typicode.com/users";
+  const dataContainer = document.getElementById("api-data");
+
+  ...(continue from fetch.html)
+```
+
+---
+
+## 🚀 Getting Started
+
+1. Clone or download the repository.
+2. Open `index.html` (quiz) or `fetch-data.html` in your browser.
+3. Interact with the form and observe the user data loading.
+
+---
+
+## ✅ Status
+
+All listed tasks are completed and function as expected.
+
+---
+
 ## 👩🏽‍💻 Author
-Mmesoma Chukwumezie
+
+**Mmesoma Chukwumezie**
 Aspiring Front-End Developer
 
